@@ -1,2 +1,2 @@
 # html
-knowledge study about html
+Knowledge study about html

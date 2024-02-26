@@ -7,13 +7,36 @@
     <title>Link & Image</title>
 </head>
 
-<body>
-    <h1>Homepage</h1>
-    <a href="https://www.theodinproject.com/about">Go to odin website</a>
 
+<h1>Homepage</h1>
+target="_blank" is used to open the link with another blank webpage</br>
 
+超链接a标签的rel="noopener noreferrer"属性是一种新特性，它能让网站更安全，超链接添加rel="noopener noreferrer"来防止钓鱼网站, it is recommended to always
+pair
+a target="_blank" with a rel="noopener noreferrer"</br>
+<a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">Go to odin website</a>
 
+<h2>Absolute Link</h2>
+<p>Links to pages on other websites on the internet are called absolute links. A typical absolute link will be made up
+    of the following parts: protocol://domain/path. An absolute link will always contain the protocol and domain of the
+    destination.</p>
+<h2>Relative Link</h2>
+<P>Links to other pages within our own website are called relative links. Relative links do not include the domain name,
+    since it is another page on the same site, it assumes the domain name will be the same as the page we created the
+    link on.</P>
+<h4>Example of relative link:</h4>
 
+<a href="pages/about_page.html">About</a>
+<p>note:usually want to organize our website directories a little better. Normally we would only have the index.html at
+    the
+    root directory and all other HTML files in their own directory.</p>
+
+<h2>Images</h2>
+<p>It can embed an image using both absolute and relative paths.</p>
+Absolute path: chrome://branding/content/about-logo.png(We don't need store the image in our own local files)
+<img src="chrome://branding/content/about-logo.png" alt="The Odin Project Logo">
+<P>alt="The Odin Project Logo" helps to replace the image when it is not appear</P>
+<p>Relative path: <img src="images/dog.jpg" alt="dog" height="310" width="310"></p>
 </body>
 
 </html>
